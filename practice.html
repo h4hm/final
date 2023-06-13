@@ -4,36 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Practice</title>
-
-  <link rel="stylesheet" href="./gith/css/practice.css">
+  <!-- 메타태그 -->
+  <link rel="icon" type="image/x-icon" href="경로">
+  <!-- CSS 링크 -->
+  <link rel="stylesheet" href="./css/practice.css">
 </head>
 <body>
   <div>
-      <h1>TITLE</h1>
-      
-      <header>
-        <h2></h2>
-      </header>
-      <section>
-      <h3></h3>  
-      <h4></h4>
-      <h5></h5>
-      </section>
+    <header>
+      <h1>큰 타이틀</h1>
+    </header>
+    <section id="list">
+      <h2>3섹션 제목</h2>
+      <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href="#read" style="color: red;">본문으로</a></li>
+      </ul>
+    </section>
+    <hr />
+    <section>
+      <p>
+        <h2>1섹션 제목</h2>
+        <p>내용</p>
+      </p>
+    </section>
+    <hr />
+    <section>
+      <h2>2섹션 제목</h2>
+      <ul>
+        <li><strong>중요한 메세지</strong></li>
+        <li><em>강조 메세지</em></li>
+        <li><b>볼드체<b></li>
+        <li><adress>연락처</adress></li>
+      </ul>
+    </section>
+    <hr />
+    <hr />
+    <section id="read">
+      <h2>4섹션 제목</h2>
+      <h3>4섹션 소제목</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore sed, illo dicta sapiente itaque distinctio cum vel placeat repellat commodi eos consequatur dignissimos mollitia asperiores, veritatis fugit qui nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore distinctio id aperiam. Ratione quos ipsam aspernatur consectetur, blanditiis eum rem accusamus voluptatem esse nihil aliquid, nostrum tenetur quod, placeat voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, temporibus expedita. Voluptatibus ea a eius molestias alias mollitia saepe velit sint iure, tempora fugiat pariatur accusamus quaerat neque dicta nobis.</p>
+      <h3>4섹션 소제목2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempora, quaerat eius sapiente error repudiandae qui, nam mollitia nostrum sed ab minima voluptatibus dolorum quae asperiores repellat earum, dolores debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi assumenda maiores, totam sint maxime consectetur aliquid porro minima id neque nobis aliquam in natus consequatur. Non ad voluptatem labore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nihil iusto hic fuga eveniet nam quasi laborum quisquam at. Porro natus quidem voluptatem quam cum soluta enim rerum omnis commodi?</p>
+      <p><a href="#list">목록으로</a></p>
+    </section>
+    <!-- 반응형 이미지 -->
+    <picture>
+      <source media="(min-width: 650px)" srcset="./images/img_food.jpg">
+      <source media="(min-width: 450px)" srcset="./images/img_girl.jpg">
+      <img src="./images/daisy.jpeg" alt="daisy" width="100%">
+  </div>
+  <div>
+    <table>
+      <caption>테이블 설명 : 자세한 설명</caption>
+      <colgroup>
+        <col width="40%">
+        <col span="3">
+      </colgroup>
 
-      <hr />
-
-      <header>
-        <h2></h2>
-      </header>
-      <section>
-        <p>
-          <ul>
-            <li><b>볼드체</b></li>              
-            <li><strong>중요한텍스트</strong></li>              
-            <li><em>강조텍스트</em></li>            
-          </ul>
-        </p>
-      </section>
+    </table>
   </div>
 </body>
 </html>

@@ -114,12 +114,29 @@
 
       <!-- 반응형이미지 -->
       <picture>
-        <!-- width 465px 이상일 경우 이미지 변화 -->
+        <!-- width 650px 이상일 경우 이미지 변화 -->
         <source media="(min-width: 650px)" srcset="./images/img_food.jpg">
+        <!-- width 465px 이상일 경우 이미지 변화 -->
         <source media="(min-width: 465px)" srcset="./images/img_car.jpg">
-        <img src="./images/img_girl.jpg" alt="뒷통수">
-        
+        <img src="./images/img_girl.jpg" alt="뒷통수" width="100%">
       </picture>
+
+      <header>
+        <h2>table 태그</h2>
+      </header>
+      <section>
+        <table>
+          <caption>테이블 설명 : 자세한 설명</caption>
+          <colgroup>
+            <!-- 첫 col은 40%크기를 부여하고 나머지60%크기를 셋이서 나눠갖는다 -->
+            <col width="40%">
+            <col span="3">
+          </colgroup>
+          <thead>
+
+          </thead>
+        </table>
+      </section>
   </div>
   <!-- <p>안녕하세요.</p> -->
   <!-- 주석 태그 -->
