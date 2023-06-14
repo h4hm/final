@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <!-- 한국어 : ko -->
 <html lang="ko">
-  <!-- head : 페이지 설정 -->
+<!-- head : 페이지 설정 -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,164 +28,343 @@
   <!-- External CSS : 이거 사용하기 -->
   <link rel="stylesheet" href="./css/comm.css">
 </head>
+
 <body>
   <div>
-      <h1>글씨 태그</h1>
-      <!-- 230612 header 수정 -->
-      <header>
-        <h2>헤더 태그</h2>
-      </header>
-      <section>
-        <h1>h1태그 : 가장 중요한 타이틀</h1>
-        <h2>h2태그 : 두번째로 중요한 타이틀</h2>
-        <h3>h3태그 : 세번째로 중요한 타이틀</h3>
-      </section>
-      <hr />
-      <header>
-        <h2>p 태그</h2>
-      </header>
-      <section>
-        <p>올해 상반기 집주인은 세입자에게 2년 전에 받은 보증금에서 평균 1억원을 차액으로 내줬으며, 올해 하반기에는 전셋값이 지금 수준을 유지해도 3천만원 더 많은 1억3천만원가량의 보증금을 반환해야 할 것으로 예측됐다.</p>
-      </section>
-      <hr />
-      <header>
-        <h2>텍스트 서식</h2>
-      </header>
-      <section>
-        <p>
+    <h1>글씨 태그</h1>
+    <!-- 230612 header 수정 -->
+    <header>
+      <h2>헤더 태그</h2>
+    </header>
+    <section>
+      <h1>h1태그 : 가장 중요한 타이틀</h1>
+      <h2>h2태그 : 두번째로 중요한 타이틀</h2>
+      <h3>h3태그 : 세번째로 중요한 타이틀</h3>
+    </section>
+    <hr />
+    <header>
+      <h2>p 태그</h2>
+    </header>
+    <section>
+      <p>올해 상반기 집주인은 세입자에게 2년 전에 받은 보증금에서 평균 1억원을 차액으로 내줬으며, 올해 하반기에는 전셋값이 지금 수준을 유지해도 3천만원 더 많은 1억3천만원가량의 보증금을 반환해야 할
+        것으로 예측됐다.</p>
+    </section>
+    <hr />
+    <header>
+      <h2>텍스트 서식</h2>
+    </header>
+    <section>
+      <p>
         - b 태그 : 일반 <b>볼드체</b><br />
         - strong 태그 : <strong>중요한</strong> 텍스트<br />
         - i 태그 : <i>기술 용어, 구문</i><br />
         - em 태그 : <em>강조 텍스트</em><br />
         - mark 태그 : <mark>디자인적으로 강조</mark><br />
-        - address 태그 : <address>연락처 정보를 위한 텍스트</address>
-        </p>
-      </section>
+        - address 태그 :
+      <address>연락처 정보를 위한 텍스트</address>
+      </p>
+    </section>
 
-      <header>
-        <h2>Link 태그</h2>
-      </header>
-      <section id="nav">
-        <!-- 절대경로 -->
-        <p><a href="https://www.naver.com" target="_blank">Html Link</a></p>
-        <!-- 상대경로 -->
-        <p><a href="./01_layout.html">Layout.html</a></p>
-        <p><a href="./images/daisy.jpeg">Daisy</a></p>
-        <p><a href="images/daisy.jpeg">Daisy2</a></p>
-        <p><a href="mailto:jkl4696@naver.com">Send Mail</a></p>
-        <!-- 웹 접근성 -->
-        <p><a href="https://www.naver.com" title="새창열림" target="_blank">네이버</a></p>
-        <p><a href="#main">Main 가기</a></p>
-      </section>
-      <section>
-        <h2>C1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti aliquid?</p>
-      </section>
-      <section>
-        <h2>C2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti aliquid?</p>
-      </section>
-      <section>
-        <h2>C3</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti aliquid?</p>
-      </section>
-      <section>
-        <h2>C4</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti aliquid?</p>
-      </section>
-      <section id="main">
-        <h2>main</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti aliquid?</p>
-      </section>
-      <p><a href="#nav">Nav로 가기</a></p>
-      
-      <header>
-        <h2>images 태그</h2>
-      </header>
-      <section>
-        <!-- 상대경로 -->
-        <!-- width, height 속성엔 단위 생략 -->
-        <img src="./images/daisy.jpeg" alt="데이지" width="200" height="500">
-        <img src="./images/daisy.jpeg" alt="데이지" style="width: 300px;">
-        <!-- 절대경로 -->
-        <a href="https://www.rankingdak.com/promotion/exhibit/list?utm_source=timeboard&utm_medium=DA&utm_campaign=mainbranding&utm_content=&utm_term=6_3_D" target="_blank" title="새창열림">
-          <img src="https://ssl.pstatic.net/melona/libs/1448/1448051/c86852e380ea82d9bd5c_20230612164337100.jpg" alt="랭킹닭컴 근육절 D-1 이 가격 이제 끝++! 닭가슴살 스테이크 팩당 단돈 1000원부터" width="100%">
-        </a>
-      </section>
+    <header>
+      <h2>Link 태그</h2>
+    </header>
+    <section id="nav">
+      <!-- 절대경로 -->
+      <p><a href="https://www.naver.com" target="_blank">Html Link</a></p>
+      <!-- 상대경로 -->
+      <p><a href="./01_layout.html">Layout.html</a></p>
+      <p><a href="./images/daisy.jpeg">Daisy</a></p>
+      <p><a href="images/daisy.jpeg">Daisy2</a></p>
+      <p><a href="mailto:jkl4696@naver.com">Send Mail</a></p>
+      <!-- 웹 접근성 -->
+      <p><a href="https://www.naver.com" title="새창열림" target="_blank">네이버</a></p>
+      <p><a href="#main">Main 가기</a></p>
+    </section>
+    <header>
+      <h2>images 태그</h2>
+    </header>
+    <section>
+      <!-- 상대경로 -->
+      <!-- width, height 속성엔 단위 생략 -->
+      <img src="./images/daisy.jpeg" alt="데이지" width="200" height="500">
+      <img src="./images/daisy.jpeg" alt="데이지" style="width: 300px;">
+      <!-- 절대경로 -->
+      <a href="https://www.rankingdak.com/promotion/exhibit/list?utm_source=timeboard&utm_medium=DA&utm_campaign=mainbranding&utm_content=&utm_term=6_3_D"
+        target="_blank" title="새창열림">
+        <img src="https://ssl.pstatic.net/melona/libs/1448/1448051/c86852e380ea82d9bd5c_20230612164337100.jpg"
+          alt="랭킹닭컴 근육절 D-1 이 가격 이제 끝++! 닭가슴살 스테이크 팩당 단돈 1000원부터" width="100%">
+      </a>
+    </section>
 
-      <!-- 반응형이미지 -->
-      <picture>
-        <!-- width 650px 이상일 경우 이미지 변화 -->
-        <source media="(min-width: 650px)" srcset="./images/img_food.jpg">
-        <!-- width 465px 이상일 경우 이미지 변화 -->
-        <source media="(min-width: 465px)" srcset="./images/img_car.jpg">
-        <img src="./images/img_girl.jpg" alt="뒷통수" width="100%">
-      </picture>
+    <!-- 반응형이미지 -->
+    <picture>
+      <!-- width 650px 이상일 경우 이미지 변화 -->
+      <source media="(min-width: 650px)" srcset="./images/img_food.jpg">
+      <!-- width 465px 이상일 경우 이미지 변화 -->
+      <source media="(min-width: 465px)" srcset="./images/img_car.jpg">
+      <img src="./images/img_girl.jpg" alt="뒷통수" width="100%">
+    </picture>
 
-      <header>
-        <h2>table 태그</h2>
-      </header>
-      <section>
-        <table>
-          <!-- 웹 접근성 요건 -->
-          <caption>테이블 설명 : 자세한 설명</caption>
-          <colgroup>
-            <!-- 첫 col은 40%크기를 부여하고 나머지 60%크기를 셋이서 나눠갖는다 -->
-            <col width="40%">
-            <col span="3">
-            <!-- span : 열의 갯수 -->
-          </colgroup>
-          <thead>
-            <tr>
-              <td>이름</td>
-              <td>국어</td>
-              <td>영어</td>
-              <td>수학</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>다니엘</td>
-              <td>열</td>
-              <td>열</td>
-              <td>열</td>
-            </tr>
-            <tr>
-              <td>민지</td>
-              <td>열</td>
-              <td>열</td>
-              <td>열</td>
-            </tr>         
-              <td>하니</td>
-              <td>열</td>
-              <td>열</td>
-              <td>열</td>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>혜인</td>
-              <td>열</td>
-              <td>열</td>
-              <td>열</td>
-            </tr>  
-          </tfoot>
-        </table>
-      </section>
-      <style>
-        table, th, td {
-          border: 3px solid #000;
-          border-collapse: collapse;
-        }
-        table {
-          width: 100%;
-        }
-        td {
-          height: 50px;
-        }
-      </style>
+    <header>
+      <h2>table 태그</h2>
+    </header>
+    <section>
+      <table>
+        <!-- 웹 접근성 요건 -->
+        <caption>테이블 설명 : 자세한 설명</caption>
+        <colgroup>
+          <!-- 열의 가로 사이즈 / span : 열의갯수 -->
+          <col>
+          <col width="20%">
+          <col span="4" width="10%">
+          <!-- span : 열의 갯수 -->
+        </colgroup>
+        <!--테이블의 구분 -->
+        <thead>
+          <tr>
+            <th scope="col" rowspan="2" colspan="2">과목/이름</th>
+            <th scope="col" colspan="4">1학년 1반</th>
+          </tr>
+          <tr>
+            <th scope="col">다니엘</th>
+            <th scope="col">민지</th>
+            <th scope="col">하니</th>
+            <th scope="col">혜인</th>
+          </tr>
+        </thead>
+        <!-- 테이블의 본문 -->
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="3">공통</th>
+            <th scope="row">국어</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <th scope="row">수학</th>
+            <td>90</td>
+            <td>80</td>
+            <td>70</td>
+            <td>80</td>
+
+          </tr>
+          <tr>
+            <th scope="row">영어</th>
+            <td>80</td>
+            <td>60</td>
+            <td>50</td>
+            <td>70</td>
+          </tr>
+        </tbody>
+        <!-- 테이블의 요약 -->
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">평균점수</th>
+            <td>90</td>
+            <td>70</td>
+            <td>80</td>
+            <td>60</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <style>
+      table,
+      th,
+      td {
+        border: 3px solid #000;
+        border-collapse: collapse;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        height: 50px;
+      }
+
+      thead {
+        background: #f2ffd5;
+      }
+
+      tfoot {
+        background: #e6d8d8;
+      }
+    </style>
+
+    <header>
+      <h2>List 리스트</h2>
+    </header>
+    <section>
+      <h3>좋아하는 동물</h3>
+      <ul>
+        <!-- 순서 없는 목록 -->
+        <li>호랑이</li>
+        <li>토끼</li>
+        <li>강아지</li>
+      </ul>
+      <!-- 순서가 있는 목록 -->
+      <ol>
+        <li>강아지</li>
+        <li>토끼</li>
+        <li>호랑이</li>
+      </ol>
+
+      <!-- Nav -->
+
+      <h3>메인메뉴</h3>
+      <ul>
+        <li>
+          탑
+          <!-- depth2 -->
+          <ul>
+            <li>
+              블라우스
+              <ul>
+                <!-- depth3 -->
+                <li>depth3</li>
+                <li>depth3</li>
+                <li>depth3</li>
+              </ul>
+            </li>
+            <li>티</li>
+            <li>셔츠</li>
+            <li>니트</li>
+          </ul>
+        </li>
+        <li>
+          아우터
+          <ul>
+            <li>자켓</li>
+            <li>코트</li>
+            <li>
+              가디건
+              <ul>
+                <li>depth3</li>
+                <li>depth3</li>
+                <li>depth3</li>
+              </ul>
+            </li>
+            <li>머플러</li>
+          </ul>
+        </li>
+        <li>
+          팬츠
+          <ul>
+            <li>청바지</li>
+            <li>짧은바지</li>
+            <li>긴바지</li>
+            <li>레깅스</li>
+          </ul>
+        </li>
+        <li>
+          악세사리
+          <ul>
+            <li>귀고리</li>
+            <li>목걸이</li>
+            <li>반지</li>
+            <li>팔찌</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#">depth1</a>
+          <ul>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">depth2</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">depth1</a>
+          <ul>
+            <li>
+              <a href="#">depth2</a>
+              <ul>
+                <li>
+                  <a href="#">depth3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">depth2</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">depth1</a>
+          <ul>
+            <li>
+              <a href="#">depth2</a>
+            </li>
+            <li>
+              <a href="#">depth2</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">depth1</a>
+          <ul>
+            <li>
+              <a href="#">depth2</a>
+            </li>
+            <li>
+              <a href="#">depth2</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>C1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem
+        cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti
+        aliquid?</p>
+    </section>
+    <section>
+      <h2>C2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem
+        cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti
+        aliquid?</p>
+    </section>
+    <section>
+      <h2>C3</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem
+        cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti
+        aliquid?</p>
+    </section>
+    <section>
+      <h2>C4</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem
+        cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti
+        aliquid?</p>
+    </section>
+    <section id="main">
+      <h2>main</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti error corporis ut? Voluptatem autem
+        cumque exercitationem molestiae consequatur saepe sit modi nihil facilis, impedit libero, id fuga, deleniti
+        aliquid?</p>
+    </section>
+    <p><a href="#nav">Nav로 가기</a></p>
+
   </div>
   <!-- <p>안녕하세요.</p> -->
   <!-- 주석 태그 -->
   <p><!-- 안녕하세요 --></p>
 </body>
+
 </html>
