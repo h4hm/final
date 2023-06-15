@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제목</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 3px solid #000;
+      border-collapse: collapse;
+    }
+
+    table {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <table>
+      <caption>테이블 설명</caption>
+      <colgroup>
+        <col width="20%">
+        <col span="4">
+      </colgroup>
+      <thead>
+        <th scope="col">분류</th>
+        <th scope="col">A</th>
+        <th scope="col">B</th>
+        <th scope="col">C</th>
+        <th scope="col">D</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>나</td>
+          <td>다</td>
+          <td>라</td>
+          <td>마</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td colspan="4">바</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th>3</th>
+        <td>결과</td>
+        <td>결과</td>
+        <td>결과</td>
+        <td>결과</td>
+      </tfoot>
+    </table>
+  </section>
+</body>
+</html>
