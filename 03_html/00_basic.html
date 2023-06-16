@@ -27,6 +27,14 @@
   </style>
   <!-- External CSS : 이거 사용하기 -->
   <link rel="stylesheet" href="./css/comm.css">
+
+  <!-- External js / 닫기태그없으면 오류남-->
+  <!-- jquery 라이브러리 : 건들지말것 -->
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/comm.js"></script>
+  </head>
 </head>
 
 <body>
@@ -413,23 +421,32 @@
           border: 3px solid #4800ff;
           background: #ffd5d5;
         }
+
         .sec {
           border: 3px solid #ff2323;
         }
+
         .sec1 {
           background: #b74cff;
         }
+
         .sec2 {
           background: #4cff55;
         }
+
         .sec3 {
           background: #ff614c;
         }
       </style>
     </section>
 
-    <p><a href="#nav">Nav로 가기</a></p>
-
+    <header>
+      <h2>iframe</h2>
+    </header>
+    <iframe src="./01_layout.html" frameborder="0" style="width: 100%;height: 300px;""></iframe>
+      <p>
+      <a href=" #nav">Nav로 가기</a>
+      </p>
   </div>
   <!-- <p>안녕하세요.</p> -->
   <!-- 주석 태그 -->
