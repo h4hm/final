@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1>HTML FORM PRACTICE</h1>
+    <form action="">
+        <!-- 체크박스 -->
+        <div class="terms_item">
+            <div class="inp">
+                <input type="checkbox" id="check1">
+                <label for="check1">네이버 이용약관</label>
+            </div>
+            <div class="box">
+                네이버 서비스를 이용해주셔서 감사합니다.
+            </div>
+        </div>
+        <div class="terms_item">
+            <input type="checkbox" id="terms2">
+            <label for="terms2">개인정보 수집 및 이용</label>
+        </div>
+        <input type="submit" value="확인" name="btnsend2">
+    </form>
+    <hr />
+    <form action="">
+        <!-- 정보 입력 -->
+        <div>
+            <label for="id">아이디</label>
+            <input type="text" name="id" id="id" placeholder="10자이하로 입력해주세요" maxlength="10">
+        </div>
+        <div>
+            <label for="pw">비밀번호</label>
+            <input type="password" name="pw" id="pw">
+        </div>
+        <div>
+            <!-- email 타입 / 키보드에 .com이 생김 -->
+            <label for="email">이메일</label>
+            <input type="email" name="email" id="email"> @
+            <!-- 선택박스 -->
+            <select>
+                <option value="이메일선택">이메일선택</option>
+                <option value="gmail">gmail.com</option>
+                <option value="naver">naver.com</option>
+                <option value="daum">daum.com</option>
+            </select>
+        </div>
+        <!-- number 타입 / 숫자키배드 -->
+        <div>
+            <label for="birth">생년월일</label>
+            <input type="number" name="birth" id="birth">
+        </div>
+        <hr />
+        <div>
+            <!-- 라디오 type / label 따로 작성 -->
+            <!-- name값 똑같이해서 한묶음으로 만들었음 -->
+            <strong>성별</strong>
+            <input type="radio" name="gender" id="gender1">
+            <label for="gender1">남자</label>
+            <input type="radio" name="gender" id="gender2">
+            <label for="gender2">여자</label>
+            <input type="radio" name="gender" id="gender3">
+            <label for="gender3">선택안함</label>
+        </div>
+        <div>
+            <strong>언어</strong>
+            <input type="radio" name="lang" id="lang1">
+            <label for="lang1">HTML</label>
+            <input type="radio" name="lang" id="lang2">
+            <label for="lang2">CSS</label>
+            <input type="radio" name="lang" id="lang3">
+            <label for="lang3">JAVA</label>
+        </div>
+        <div>
+            <label for="selNation">국가</label>
+            <select name="selNation" id="selNation" disabled>
+                <option value="대한민국">대한민국</option>
+                <option value="미국">미국</option>
+                <option value="중국">중국</option>
+            </select>
+        </div>
+        <div>
+            <!-- 번호입력 -->
+            <!-- value값 지정해서 미리 값지정 -->
+            <!-- readonly > 읽기전용 (작성불가)-->
+            <label for="phone">전화번호</label>
+            <input type="tel" name="phone" id="phone" value="01012344567" readonly maxlength="11">
+            <input type="button" value="인증 요청" id="btnSend" name="btnSend">
+        </div>
+    </form>
+    <hr />
+    <form action="">
+        <fieldset>
+            <!-- legend = caption -->
+            <legend>폼설명</legend>
+            <div>
+                <label for="title">제목</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <!-- textarea 입력필드 생성 -->
+            <div>
+                <label for="bbs">본문</label>
+                <textarea name="bbs" id="bbs" cols="30" rows="10"></textarea>
+            </div>
+            <!-- 파일첨부 -->
+            <div>
+                <label for="myfile">파일첨부</label>
+                <!-- multiple 다중첨부 -->
+                <input type="file" name="myfile" id="myfile" multiple>
+            </div>
+            <!-- button : 닫는태그있음 (태그 삽입 가능)
+                input : 닫는태그없음 (태그 삽입 불가 - css 사용해야함)-->
+            <button id="ok">저장</button>
+            <input type="reset" value="취소" id="cancle">
+        </fieldset>
+    </form>
+    <form action="">
+        <!-- 네이버 검색창 > fieldset -->
+        <fieldset>
+            <legend>검색</legend>
+            <div>
+                <label for="search">검색</label>
+                <input type="search" name="search" id="search">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
