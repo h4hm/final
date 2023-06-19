@@ -5,11 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
+  <style>
+    label {
+      display: inline-block;
+      width: 100px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Html Form</h1>
+  <h1>HTML Form</h1>
   <form action="">
+    <!-- 체크박스 -->
     <div class="terms_item">
       <div class="inp">
         <input type="checkbox" name="" id="check1">
@@ -20,6 +27,116 @@
         서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
       </div>
     </div>
+    <!-- label / id 값을 똑같이해서 텍스트가 클릭되어도 내용이 클릭되게 -->
+    <div class="terms_item">
+      <input type="checkbox" id="terms2">
+      <label for="terms2">개인정보 수집 및 이용</label>
+    </div>
+    <!-- submit 버튼 클릭시 상단의 정보 전송 -->
+    <input type="submit" value="확인" name="btnSend2">
+  </form>
+  <hr />
+  <form action="">
+    <div>
+      <!-- 장보 입력 -->
+      <label for="id">아이디</label>
+      <!-- maxlength - 최대입력가능한문자길이 -->
+      <input type="text" name="id" id="id" placeholder="10자 이하" maxlength="10">
+    </div>
+    <div>
+      <label for="pw">비밀번호</label>
+      <input type="password" name="pw" id="pw">
+    </div>
+    <div>
+      <label for="email">이메일</label>
+      <!-- email 타입 > 키보드에 .com생김 -->
+      <input type="email" name="email" id="email"> @
+      <select>
+        <option value="이메일선택">이메일 선택</option>
+        <option value="gmail">gmail.com</option>
+        <option value="naver">naver.com</option>
+        <option value="daum">daum.com</option>
+      </select>
+    </div>
+    <div>
+      <label for="birth">생년월일</label>
+      <!-- number > 숫자키패드 -->
+      <input type="number" name="birth" id="birth">
+    </div>
+    <hr />
+    <!-- radio 버튼은 label 따로따로 부여 -->
+    <!-- name 값을 똑같이 작성하여 한묶음으로 만들기 -->
+    <div>
+      <strong>성별</strong>
+      <!-- 입력유형 라디오 -->
+      <input type="radio" name="gender" id="gender1">
+      <label for="gender1">남자</label>
+      <input type="radio" name="gender" id="gender2">
+      <label for="gender2">여자</label>
+      <input type="radio" name="gender" id="gender3">
+      <label for="gender3">선택안함</label>
+    </div>
+    <!-- id값은 겹치면 안됨-->
+    <div>
+      <strong>언어</strong>
+      <input type="radio" name="lang" id="lang1">
+      <label for="lang1">HTML</label>
+      <input type="radio" name="lang" id="lang2">
+      <label for="lang2">CSS</label>
+      <input type="radio" name="lang" id="lang3">
+      <label for="lang3">JAVA</label>
+    </div>
+    <!-- 셀렉트 박스-->
+    <div>
+      <label for="selNation">국가</label>
+      <select name="selNation" id="selNation" disabled>
+        <option value="대한민국">대한민국</option>
+        <option value="미국">미국</option>
+        <option value="중국">중국</option>
+      </select>
+    </div>
+    <div>
+      <!-- 번호입력 -->
+      <label for="phone">휴대전화번호</label>
+      <input type="tel" name="phone" id="phone" value="01012345678" readonly maxlength="11">
+    </div>
+    <input type="button" value="인증 요청" id="btnSend" name="btnSend">
+  </form>
+  <hr />
+  <form action="">
+    <fieldset>
+      <legend>폼 설명</legend>
+      <div>
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title">
+      </div>
+      <!-- label 은 꼭 넣어야함 -->
+      <!-- textarea 입력필드 만들기 -->
+      <div>
+        <label for="bbs">본문</label>
+        <textarea name="bbs" id="bbs" cols="30" rows="10"></textarea>
+      </div>
+      <!-- 파일 첨부 -->
+      <div>
+        <label for="myfile">파일첨부</label>
+        <!-- multiple - 다중첨부 -->
+        <input type="file" name="myfile" id="myfile" multiple>
+      </div>
+      <!-- input은 value 값에 텍스트 넣음 / button 태그는 사이에 텍스트넣음 -->
+      <!-- 저장 / 취소 버튼 -->
+      <button id="ok">저장</button>
+      <input type="reset" value="취소" id="cancle">
+    </fieldset>
+  </form>
+  <!-- 검색창만들기 - search -->
+  <form action="">
+    <fieldset>
+      <legend>검색</legend>
+      <div>
+        <label for="search">검색</label>
+        <input type="search" name="search" id="search">
+      </div>
+    </fieldset>
   </form>
 </body>
 
