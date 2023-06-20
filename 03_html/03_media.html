@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media</title>
+</head>
+
+<body>
+  <h1>Media</h1>
+  <h2>Video</h2>
+  <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay muted loop></video>
+  <h2>Audio</h2>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/mpeg">
+  </audio>
+  <h2>Youtube</h2>
+  <!-- 자동재생 + 뮤트 : 링크뒤에 ?autoplay=1&mute=1 / 루프 : &loop=1 / 컨트롤제거 : &controls=0-->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/5IiZ2iOpa88?autoplay=1&mute=1&controls=0"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+  <!-- 오토 + 루프  플레이 -->
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/5IiZ2iOpa88?autoplay=1&loop=1&playlist=5IiZ2iOpa88" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</body>
+
+</html>

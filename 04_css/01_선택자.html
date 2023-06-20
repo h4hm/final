@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자 | CSS</title>
+</head>
+
+<body>
+  <h1>선택자</h1>
+  <h2>태그 선택자</h2>
+  <div id="gnb">
+    <ul class="depth1">
+      <li class="fst">
+        <a href="#">menu1</a>
+        <ul class="depth2-1">
+          <li><a href="#">menu1-1</a></li>
+          <li><a href="#">menu1-2</a></li>
+        </ul>
+      </li>
+      <li class="snd">
+        <a href="#">menu2</a>
+        <ul class="depth2-2">
+          <li><a href="#">menu2-1</a></li>
+          <li><a href="#">menu2-2</a></li>
+        </ul>
+      </li>
+      <li class="trd">
+        <a href="#">menu3</a>
+        <ul class="depth2-3">
+          <li><a href="#">menu3-1</a></li>
+          <li><a href="#">menu3-2</a></li>
+        </ul>
+      </li>
+      </li>
+      <li class="lst">
+        <a href="#">menu4</a>
+        <ul class="depth2-4">
+          <li><a href="#">menu4-1</a></li>
+          <li><a href="#">menu4-2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <style>
+    #gnb {
+      border: 3px solid tomato;
+    }
+
+    .depth2-1 {
+      border: 3px solid red;
+    }
+
+    .depth2-1 li {
+      background: white;
+    }
+
+    .depth2-3 a {
+      background: yellow;
+    }
+
+    /* 태그잡지말고 .list 이런식으로 클래스만 잡기 (수정어렵고 다른것이 중복으로 잡힐수있음) */
+    .depth1 .fst>a,
+    .depth1 .lst>a {
+      background: red;
+    }
+
+    ul {
+      border: 1px solid #000;
+    }
+
+    li {
+      margin: 10px;
+      background: #b5b5b5;
+    }
+
+    /* ul > li > ul > li의 백그라운드 컬러 부여 자손선택자 - 모든자손선택 */
+    ul li {
+      background: pink;
+    }
+
+    /* 자식선택자 - 특정자식선택 */
+    ul.depth1>li {
+      background: black;
+    }
+
+    .depth1 .fst>a,
+    .depth1 .snd>a,
+    .depth1 .trd>a,
+    .depth1 .lst>a {
+      background: orange;
+    }
+  </style>
+</body>
+
+</html>
