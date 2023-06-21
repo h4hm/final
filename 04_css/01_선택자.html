@@ -10,6 +10,50 @@
 <body>
   <h1>선택자</h1>
   <h2>태그 선택자</h2>
+  <div class="wrap">
+    wrap
+    <div class="util">util</div>
+    <header class="header">
+      header
+      <h1 class="logo"><a href="#">Logo</a></h1>
+      <nav class="gnb">nav</nav>
+    </header>
+  </div>
+  <!-- html의 주석 -->
+  <style>
+    /* CSS의 주석 */
+    .wrap {
+      border: 5px solid rgb(255, 0, 0);
+      background: rgb(255, 0, 0);
+    }
+
+    .util {
+      background: rgba(255, 165, 0, 0.5);
+    }
+
+    .header {
+      border: 5px solid pink;
+    }
+
+    .logo {
+      background: black;
+    }
+
+    .logo a {
+      font-size: 18px;
+      color: white;
+    }
+
+    .gnb {
+      border: 5px solid rgba(0, 0, 255, 0.5);
+    }
+  </style>
+
+
+  <br />
+  <br />
+  <br />
+
   <div id="gnb">
     <ul class="depth1">
       <li class="fst">
@@ -61,8 +105,8 @@
     }
 
     /* 태그잡지말고 .list 이런식으로 클래스만 잡기 (수정어렵고 다른것이 중복으로 잡힐수있음) */
-    .depth1 .fst>a,
-    .depth1 .lst>a {
+    .fst>a,
+    .lst>a {
       background: red;
     }
 

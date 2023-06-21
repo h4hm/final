@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상선택자 | css</title>
+  <style>
+    /* 모든(*) 스타일 reset */
+    * {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>가상선택자</h1>
+  <h2>순서</h2>
+  <ul class="lst-">
+    <li>menu 1</li>
+    <li>menu 2</li>
+    <li>menu 3</li>
+    <li>menu 4</li>
+  </ul>
+
+  <style>
+    .lst- {
+      border: 5px solid red;
+    }
+
+    .lst- li {
+      border: 5px solid orange;
+      margin: 5px;
+    }
+
+    /* 가상선택자 / li중 첫번째 */
+    .lst- li:first-child {
+      background: yellow;
+    }
+
+    /* 가상선택자 / li중 n번째 */
+    .lst- li:nth-child(2) {
+      background: green;
+    }
+
+    .lst- li:nth-child(3) {
+      background: blue;
+    }
+
+    /* 가상선택자 / li중 마지막 */
+    .lst- li:last-child {
+      background: purple;
+    }
+
+    /* 마우스를 올렸을때 */
+    .lst- li:hover {
+      background: black;
+      color: white;
+    }
+  </style>
+  <h2>링크 가상선택자</h2>
+  <a href="#">링크 가상선택자</a>
+  <style>
+    a {
+      font-size: 20px;
+    }
+
+    /* 잘 안씀 그냥 a태그에 넣으면됨*/
+    a:link {
+      color: black
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    /* 클릭하고있을때 */
+    a:active {
+      color: green;
+    }
+
+    /* 회사 세팅값사용 */
+    a:visited {
+      color: blue;
+    }
+  </style>
+  <h2>가상 엘리먼트 선택자</h2>
+  <ul class="lst2">
+    <li><a href="#">공지사항 1</a></li>
+    <li><a href="#">공지사항 2</a></li>
+    <li><a href="#">공지사항 3</a></li>
+    <li><a href="#">공지사항 4</a></li>
+  </ul>
+  <style>
+    /* li::요소 >> li에만 포함되는 요소
+     선언에 content 꼭 넣어야함*/
+    .lst2 li::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #000;
+      /* border radius 값은 가로세로값이랑 동일하게 넣기 */
+      border-radius: 8px;
+      margin-right: 8px;
+    }
+
+    .lst2 li::after {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: blue;
+      margin-left: 8px;
+    }
+
+
+    .lst2 a::before {
+      content: '-before-';
+    }
+
+    .lst2 a::after {
+      content: '-after-';
+    }
+
+    .lst2 a {
+      color: red;
+    }
+  </style>
+
+  <!-- ul.lst3>li*4{menu $} -->
+  <ul class="lst3">
+    <li>menu1</li>
+    <li>menu2</li>
+    <li>menu3</li>
+    <li>menu4</li>
+  </ul>
+  <style>
+    .lst3 {
+      /* flex : 자신이 가진 컨텐츠 넓이만큼 정렬 */
+      display: flex;
+    }
+
+    .lst3 li::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #000;
+      /* 완전한 원을 만들때 50% 100% 둘다 가능 */
+      border-radius: 100%;
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .lst3 li:last-child::after {
+      display: none;
+    }
+
+    .lst3::before {
+      content: '';
+      width: 1px;
+      height: 20px;
+      background: #000;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .lst3::after {
+      content: '';
+      width: 1px;
+      height: 20px;
+      background: #000;
+      display: inline-block;
+      margin-left: 10px;
+    }
+  </style>
+</body>
+
+</html>
