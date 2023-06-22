@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FONT | CSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Kablammo&display=swap" rel="stylesheet">
+  <!-- reset (웹디기능사용) -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* 행간 */
+      line-height: 1.5;
+      color: #222328;
+      /* 링크언더라인 제거 */
+      /* text-decoration: none; */
+      list-style: none;
+      box-sizing: border-box;
+      /* 안전글꼴 - 이름중간에 공백이 있거나 한글일경우 홑따옴표로 구분하기*/
+      font-family: "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>폰트</h1>
+  <h2>폰트속성</h2>
+  <div class="font1">
+    <strong>타이틀</strong>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ea, repudiandae sed libero consequuntur</p>
+    <!-- em 절대값 60px-->
+    <em>
+      기울어짐
+      <br>
+      <span>기울어짐</span>
+    </em>
+    <br>
+    <!-- b 상대값 60px (기준14px) -->
+    <b>
+      기울어짐
+      <br>
+      <span>기울어짐</span>
+    </b>
+  </div>
+  <style>
+    h2 {
+      font-size: 50px;
+      font-family: 'Gasoek One', sans-serif;
+    }
+
+    .font1 strong {
+      font-size: 40px;
+      font-family: 'Orbit', sans-serif;
+      font-weight: normal;
+    }
+
+    .font1 p {
+      font-size: 20px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .font1 em {
+      font-size: 60px;
+      font-style: normal;
+      /* font-weight: bold; */
+    }
+
+    /* 위에 작성한 60px값(엄마태그)를 기준으로 em값으로  */
+    .font1 em span {
+      font-size: 1em;
+    }
+
+    .font1 b {
+      font-size: 3.750em;
+    }
+
+    /* 위에 작성한 3.750em값(엄마태그)로 기준값 계산 후(=60px) em계산
+    (60px to 60px) */
+    /* rem : html, body 기준 */
+    .font1 b span {
+      /* font-size: 16px; */
+      font-size: 1rem;
+    }
+  </style>
+  <h2>font size</h2>
+  <strong>VW</strong>
+  <div class="vw">responsive text</div>
+  <div class="vh">responsive text</div>
+
+  <style>
+    .vw {
+      font-family: 'Kablammo', cursive;
+      font-size: 14vw;
+    }
+
+    .vh {
+      font-family: 'Kablammo', cursive;
+      font-size: 10vh;
+    }
+  </style>
+  <h2>text</h2>
+  <strong>vertical align</strong>
+  <div class="ver">
+    <img src="./image/icon.jpg" alt="아이콘">네이버
+  </div>
+  <style>
+    .ver {
+      font-size: 24px;
+    }
+
+    .ver img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -5px;
+    }
+  </style>
+  <strong>decoration</strong>
+  <a href="#">글씨</a>
+  <style>
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+
+</html>
