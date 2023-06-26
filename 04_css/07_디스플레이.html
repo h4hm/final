@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display | CSS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      line-height: 1.5;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Display</h1>
+  <h2>Block(기본값)</h2>
+  <div class="box1">글씨</div>
+  <div class="box1">글씨</div>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 100px;
+      background: pink;
+    }
+  </style>
+  <hr />
+  <h2>Inline(글자 한개) / inline-block(가로세로값가능,글자처럼옆으로배치, 스페이스값 적용됨)</h2>
+  <!-- 엔터 > 스페이스먹음(작업할때 스페이스값들어가면안됨)-->
+  <a href="#" class="box2">블럭링크</a>
+  <a href="#" class="box2">블럭링크</a>
+  <a href="#" class="box2">블럭링크</a>
+  <style>
+    .box2 {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      border: 3px solid #000;
+      border-radius: 10px;
+      background: red;
+      text-align: center;
+      /* 컨텐트의 높이값만큼 line height 적용 */
+      line-height: 60px;
+    }
+  </style>
+  <hr />
+  <h2>none(컨텐츠없애기)</h2>
+  <div class="box3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box3 {
+      /* flex 는 부모태그에게 적용시켜야함 */
+      display: flex;
+    }
+
+    .box3 div {
+      height: 100px;
+      width: 100px;
+      border: 3px solid #000;
+      background: blue;
+    }
+
+    .box3 div:first-child {
+      /* 스크린리더기 X */
+      display: none;
+    }
+
+    .box3 div:nth-child(2) {
+      /* 스크린리더기 X */
+      /* 자리에있지만 보이지않음 */
+      visibility: hidden;
+    }
+  </style>
+  <hr />
+  <h2>FLEX</h2>
+  <div class="box-g box4">
+    <!-- box-g > 공통클래스 > 보통 앞에 적음-->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  <style>
+    /* 공통 클래스 */
+    .box-g {
+      padding: 20px;
+      margin-bottom: 30px;
+      background: blue;
+    }
+
+    .box-g div {
+      width: 100px;
+      height: 100px;
+      border: 3px solid #000;
+      background: yellow;
+    }
+
+    .box4 {
+      /* flex 는 부모태그에게 적용시켜야함 */
+      display: flex;
+    }
+
+    .box4 div {
+      margin-right: 10px;
+    }
+
+    .box4 div:nth-child(4) {
+      margin-right: 0;
+    }
+  </style>
+
+  <div class="box-g box5">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box5 {
+      display: flex;
+      /* 세로방향으로 reverse 정렬 */
+      flex-direction: row-reverse;
+    }
+  </style>
+  <div class="box-g box6">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+  </div>
+  <style>
+    .box6 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+
+  <div class="box-g box7">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box7 {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+
+  <!-- 왼쪽정렬 -->
+  <div class="box-g box8">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box8 {
+      display: flex;
+      justify-content: flex-start;
+    }
+  </style>
+
+  <!-- 오른쪽정렬 -->
+  <div class="box-g box9">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box9 {
+      display: flex;
+      justify-content: flex-end;
+    }
+  </style>
+
+  <!-- 플렉스 항목의 좌우위치 정렬하기 -->
+  <!-- 간격을 유지하여 퍼트리기 -->
+  <div class="box-g box10">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box10 {
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+
+  <div class="box-g box11">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box11 {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+
+  <!-- 플렉스 항목의 상하위치 정렬하기 -->
+  <div class="box-g box12">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box12 {
+      height: 300px;
+      display: flex;
+      /* 완벽한 센터링 */
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+  <h2>Items - 자식</h2>
+  <!-- 아이템 순서 바꾸기 -->
+  <div class="box-g box13">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box13 {
+      display: flex;
+    }
+
+    .box13 div:first-child {
+      order: 2;
+    }
+
+    .box13 div:nth-child(2) {
+      order: 3;
+    }
+  </style>
+</body>
+
+</html>
