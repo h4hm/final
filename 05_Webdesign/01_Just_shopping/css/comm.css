@@ -1,0 +1,61 @@
+/* reset */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+  color: #222328;
+}
+.wrap {
+  width: 1200px;
+  /* 꼭대기에 붙어서(위아래0) 좌우 가운데정렬 : 0 auto */
+  margin: 0 auto;
+  background: pink;
+}
+
+.header {
+  /* 블록요소는 width 100% 디폴트 */
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  /* 내부의 요소들은 height 100%가 됨 */
+  background: blue;
+}
+
+.logo {
+  display: flex;
+  /* 완벽한 센터링 */
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.logo a {
+  display: block;
+  width: 200px;
+  height: 40px;
+}
+
+.gnb .depth1 {
+  display: flex;
+}
+
+.gnb .depth1 a {
+  /* a태그는 인라인이라서 높이값 안들어감 > 블록으로 바꿔주기 */
+  display: block;
+  height: 100px;
+  /* 패딩값 li 말고 a 에 넣기 */
+  padding: 0px 30px;
+  /* 글씨속성 : 글씨를 싸고있는 바로 바깥태그에 적용 */
+  text-align: center;
+  line-height: 100px;
+  background: white;
+  border: 1px solid #000;
+}
+
+.gnb .depth2 {
+  /* display: none; */
+}
