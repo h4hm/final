@@ -16,13 +16,15 @@
   background: pink;
 }
 
+/* ------------------------ header ------------------------ */
+
 .header {
   /* 블록요소는 width 100% 디폴트 */
   display: flex;
   justify-content: space-between;
   height: 100px;
   /* 내부의 요소들은 height 100%가 됨 */
-  background: blue;
+  background: white;
 }
 
 .logo {
@@ -43,19 +45,92 @@
   display: flex;
 }
 
-.gnb .depth1 a {
+/* ---------------------- nav depth1 ---------------------- */
+
+.gnb .depth1 > li > a {
   /* a태그는 인라인이라서 높이값 안들어감 > 블록으로 바꿔주기 */
   display: block;
   height: 100px;
   /* 패딩값 li 말고 a 에 넣기 */
-  padding: 0px 30px;
+  padding: 0px 50px;
   /* 글씨속성 : 글씨를 싸고있는 바로 바깥태그에 적용 */
   text-align: center;
   line-height: 100px;
-  background: white;
-  border: 1px solid #000;
+  /* background: white; */
+  /* border: 1px solid #000; */
 }
 
+.gnb .depth1 > li > a:hover {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+/* 마우스오버했을때 depth2가 보이게하기 */
+.gnb .depth1:hover .depth2 {
+  display: block;
+}
+
+/* ----------------------- nav depth2 --------------------- */
+
 .gnb .depth2 {
-  /* display: none; */
+  display: none;
+  padding: 20px 0px;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* 밑에 뭐 더 없으니까 자식으로 잡음 */
+.gnb .depth2 a {
+  display: block;
+  /* 높이를 지정해서 공간 크기가 변동되는걸 막기 */
+  /* 높이값 넣어주면 line height로 가운데정렬 */
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.gnb .depth2 a:hover {
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+
+/* ------------------------ slide ------------------------- */
+
+/* a 태그와 img 태그는 인라인요소 */
+/* main 까지 잡아줄필요는 없음 > 섹션별로 잡아주기 */
+.slide a,
+.slide img {
+  display: block;
+}
+
+/* 나중에 스크립트로 나머지 슬라이드 올라오게 제어 */
+.slide {
+  height: 300px;
+  overflow: hidden;
+}
+
+/* ---------------------- contents ------------------------ */
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.tabs {
+  width: 350px;
+}
+
+.bnr {
+  width: 400px;
+}
+
+/* 어딜 클릭하던 링크되게 블록으로 크기맞추기 */
+.bnr a,
+.bnr img {
+  display: block;
+}
+
+.goto {
+  width: 360px;
 }
