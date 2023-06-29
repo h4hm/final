@@ -83,7 +83,7 @@
 .gnb .depth2 a {
   display: block;
   /* 높이를 지정해서 공간 크기가 변동되는걸 막기 */
-  /* 높이값 넣어주면 line height로 가운데정렬 */
+  /* 높이값 넣어주고 line height도 맞춰서 가운데정렬 */
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -118,7 +118,7 @@
 }
 
 .tabs {
-  width: 350px;
+  width: calc(100% / 2 - 230px);
 }
 
 .bnr {
@@ -132,5 +132,29 @@
 }
 
 .goto {
-  width: 360px;
+  width: calc(100% / 2 - 230px);
+}
+/* ----------------------- tabs ------------------------- */
+
+/* ---------------------- goto ------------------------- */
+.goto ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 180px;
+}
+
+.goto li {
+  /* 퍼센트는 상대값이니까 부모한테 주기 */
+  /* 반응형 - 퍼센트 / 왠만하면 퍼센트로 작업하기 */
+  width: calc(50% - 5px);
+  height: calc(50% - 5px);
+  background: blue;
+}
+
+.goto a {
+  display: block;
+  height: 100%;
+  background: green;
 }
