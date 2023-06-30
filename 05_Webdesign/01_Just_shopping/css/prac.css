@@ -1,0 +1,186 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+  color: #333;
+}
+.wrap {
+  width: 1200px;
+  /* 꼭대기에 붙어서(위아래0) 좌우 가운데정렬 : 0 auto */
+  margin: 0 auto;
+  background: pink;
+}
+
+/* ===============content============== */
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.tabs-wrap {
+  width: calc(100% / 2 - 230px);
+}
+
+.bnr {
+  width: 400px;
+}
+
+/* 어딜 클릭하던 링크되게 블록으로 크기맞추기 */
+.bnr a,
+.bnr img {
+  display: block;
+}
+
+/* =================== tabs =============== */
+
+.tabs-wrap {
+  display: flex;
+  position: relative;
+}
+
+.tabs-wrap .tabs-item {
+  width: 50%;
+}
+
+/* 비활성화 (비활성화부터 작업) */
+.tabs-wrap .tabs-item .tit {
+  height: 30px;
+  /* padding-top: 3px; */
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  border-bottom: 2px solid #333;
+  box-sizing: border-box;
+}
+
+/* 활성화 */
+.tabs-wrap .on .tit {
+  background: #333;
+  color: white;
+}
+
+.tabs-wrap .tabs-item .cont {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  background: green;
+  height: 157px;
+}
+.tabs-wrap .on .cont {
+  display: block;
+}
+
+.lst-bbs {
+  padding-top: 13px;
+}
+
+.lst-bbs li {
+  display: flex;
+  align-items: center;
+}
+
+.lst-bbs li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  margin-top: 3px;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+}
+
+.lst-bbs li a {
+  display: block;
+  line-height: 2;
+}
+
+.lst-bbs li a:hover {
+  text-decoration: underline;
+}
+
+/* =========================== gallery ================ */
+
+.lst-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lst-gallery li {
+  width: 100px;
+  padding-top: 13px;
+}
+
+.lst-gallery p {
+  /* 한줄로 만들기 */
+  white-space: nowrap;
+  /* 가로사이즈로 오버플로우 조절하기 */
+  overflow: hidden;
+  /* 말줄임 */
+  text-overflow: ellipsis;
+}
+/* ============================== goto ================== */
+
+.goto {
+  width: calc(100% / 2 - 230px);
+}
+
+.goto ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 190px;
+}
+
+.goto li {
+  /* 퍼센트는 상대값이니까 부모한테 주기 */
+  /* 반응형 - 퍼센트 / 왠만하면 퍼센트로 작업하기 */
+  width: calc(50% - 5px);
+  height: calc(50% - 5px);
+  background: blue;
+}
+
+.goto a {
+  display: block;
+  height: 100%;
+  background: green;
+}
+
+/* ================= footer ================== */
+
+.logo-foot a {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d7d7d7;
+}
+
+.lst-sns {
+  display: flex;
+}
+
+.lst-sns li {
+  margin-left: 20px;
+}
+
+.lst-sns a {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}

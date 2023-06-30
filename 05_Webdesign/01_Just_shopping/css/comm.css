@@ -13,7 +13,6 @@
   width: 1200px;
   /* 꼭대기에 붙어서(위아래0) 좌우 가운데정렬 : 0 auto */
   margin: 0 auto;
-  background: pink;
 }
 
 /* ------------------------ header ------------------------ */
@@ -117,7 +116,7 @@
   padding: 10px 0px;
 }
 
-.tabs {
+.tabs-wrap {
   width: calc(100% / 2 - 230px);
 }
 
@@ -135,6 +134,90 @@
   width: calc(100% / 2 - 230px);
 }
 /* ----------------------- tabs ------------------------- */
+
+.tabs-wrap {
+  display: flex;
+  position: relative;
+}
+
+.tabs-wrap .tabs-item {
+  width: 50%;
+}
+
+/* 비활성화 */
+.tabs-wrap .tabs-item .tit {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  border-bottom: 2px solid #000;
+}
+
+/* 활성화 */
+.tabs-wrap .on .tit {
+  background: #333;
+  color: white;
+}
+
+.tabs-wrap .tabs-item .cont {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 157px;
+}
+
+.tabs-wrap .on .cont {
+  display: block;
+}
+
+.lst-bbs {
+  padding-top: 13px;
+}
+
+.lst-bbs li {
+  display: flex;
+  align-items: center;
+}
+
+.lst-bbs li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  margin-top: 3px;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+}
+
+.lst-bbs li a {
+  display: block;
+  line-height: 2;
+}
+
+.lst-bbs li a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== gallery ============ */
+
+.lst-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lst-gallery li {
+  width: 100px;
+  padding-top: 13px;
+}
+
+.lst-gallery p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* ---------------------- goto ------------------------- */
 .goto ul {
@@ -156,5 +239,35 @@
 .goto a {
   display: block;
   height: 100%;
-  background: green;
+  background: lightgray;
+}
+
+/* ==================== footer =============== */
+
+.logo-foot a {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d7d7d7;
+}
+
+.lst-sns {
+  display: flex;
+}
+
+.lst-sns li {
+  margin-left: 20px;
+}
+
+.lst-sns a {
+  display: flex;
+  height: 100px;
+  align-items: center;
 }

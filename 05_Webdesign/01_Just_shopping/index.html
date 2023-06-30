@@ -82,51 +82,42 @@
       </div>
       <div class="contents">
         <!-- 공지사항 & 갤러리 -->
-        <div class="tabs">
-          <section class="bbs">
-            <h3>공지사항</h3>
+        <div class="tabs-wrap">
+          <div class="tabs-item on">
+            <h3 class="tit">공지사항</h3>
             <div class="cont">
-              <!-- 텍스트 리스트 -->
               <ul class="lst-bbs">
                 <li><a href="#">코로나19 예방대책 및 배송안내</a></li>
                 <li><a href="#">6월 브랜드위크 이벤트 당첨자 발표</a></li>
                 <li><a href="#">라이브방송 이벤트 당첨자 발표</a></li>
-                <li><a href="#">개인정보처리방침 변경안내</a></li>
               </ul>
             </div>
-          </section>
-          <section class="gallery">
-            <h3>갤러리</h3>
+          </div>
+          <div class="tabs-item">
+            <h3 class="tit">갤러리</h3>
             <div class="cont">
-              <!-- 썸네일 리스트 -->
               <ul class="lst-gallery">
                 <li>
                   <a href="#">
-                    <img src="#" alt="갤러리이미지1" />
-                  </a>
-                  <a href="#">
+                    <img src="./images/item.jpg" alt="아이템">
                     <p>오버핏 티셔츠</p>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="#" alt="갤러리이미지2" />
-                  </a>
-                  <a href="#">
-                    <p>반팔카라 니트</p>
+                    <img src="./images/item.jpg" alt="아이템">
+                    <p>오버핏 티셔츠</p>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="#" alt="갤러리이미지3" />
-                  </a>
-                  <a href="#">
-                    <p>밴딩 팬츠</p>
+                    <img src="./images/item.jpg" alt="아이템">
+                    <p>오버핏 티셔츠</p>
                   </a>
                 </li>
               </ul>
             </div>
-          </section>
+          </div>
         </div>
         <!-- 배너 -->
         <div class="bnr">
@@ -148,16 +139,17 @@
     <footer class="footer">
       <!-- 로고지만 h1이 두개있으면 안되니까 div처리 -->
       <div class="logo-foot">
-        <a href="#">로고 풋터용</a>
+        <a href="#">
+          <img src="./images/logo_foot.png" alt="로고">
+        </a>
       </div>
       <div class="copyright">&#169;copyright</div>
       <div class="sns">
         <!-- ul / li 까먹지않게 체크하기 -->
-        <ul>
+        <ul class="lst-sns">
           <li><a href="#">facebook</a></li>
           <li><a href="#">instagram</a></li>
           <li><a href="#">youtube</a></li>
-          <li><a href="#">blog</a></li>
         </ul>
       </div>
     </footer>
