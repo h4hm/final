@@ -1,0 +1,42 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+  color: #222328;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========= header ======= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background: white;
+}
+
+.logo a {
+  display: block;
+  width: 200px;
+  height: 40px;
+}
+
+/* ========== depth 1 ======== */
+
+.gnb .depth1 {
+  display: flex;
+}
+
+.gnv .depth1 > li > a {
+  display: block;
+  height: 100px;
+  padding: 0 50px;
+}
