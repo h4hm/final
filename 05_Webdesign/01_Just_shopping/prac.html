@@ -4,91 +4,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>JUST 쇼핑몰</title>
   <link rel="stylesheet" href="./css/prac.css">
 </head>
 
 <body>
-  <div class="contents">
-    <div class="tabs-wrap">
-      <div class="tabs-item on">
-        <h3 class="tit">공지사항</h3>
-        <div class="cont">
-          <ul class="lst-bbs">
-            <li><a href="#">코로나19 예방대책 및 배송안내</a></li>
-            <li><a href="#">6월 브랜드위크 이벤트 당첨자 발표</a></li>
-            <li><a href="#">라이브방송 이벤트 당첨자 발표</a></li>
+  <div class="wrap">
+    <header class="header">
+      <h1 class="logo">
+        <a href="#"><img src="./images/logo.jpg" alt="저스트쇼핑몰"></a>
+      </h1>
+      <nav class="gnb">
+        <ul class="depth1">
+          <li>
+            <a href="#">탑</a>
+            <ul class="depth2">
+              <li><a href="#">블라우스</a></li>
+              <li><a href="#">티</a></li>
+              <li><a href="#">셔츠</a></li>
+              <li><a href="#">니트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">아우터</a>
+            <ul class="depth2">
+              <li><a href="#">자켓</a></li>
+              <li><a href="#">코트</a></li>
+              <li><a href="#">가디건</a></li>
+              <li><a href="#">머플러</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">아우터</a>
+            <ul class="depth2">
+              <li><a href="#">청바지</a></li>
+              <li><a href="#">짧은바지</a></li>
+              <li><a href="#">긴바지</a></li>
+              <li><a href="#">레깅스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">팬츠</a>
+            <ul class="depth2">
+              <li><a href="#">귀고리</a></li>
+              <li><a href="#">목걸이</a></li>
+              <li><a href="#">팔찌</a></li>
+              <li><a href="#">반지</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="slide">
+        <div class="slide1">
+          <a href="#">
+            <img src="./images/slide2.png" alt="슬라이드1">
+          </a>
+        </div>
+        <div class="slide1">
+          <a href="#">
+            <img src="./images/slide1.jpg" alt="슬라이드2">
+          </a>
+        </div>
+        <div class="slide1">
+          <a href="#">
+            <img src="./images/slider3.png" alt="슬라이드3">
+          </a>
+        </div>
+      </div>
+      <div class="contents">
+        <div class="tabs-wrap">
+          <div class="tabs-item">
+            <h3 class="tit">공지사항</h3>
+            <div class="cont">
+              <ul class="lst-bbs">
+                <li><a href="#">내용1</a></li>
+                <li><a href="#">내용2</a></li>
+                <li><a href="#">내용3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabs-item">
+            <h3 class="tit">갤러리</h3>
+            <div class="cont">
+              <ul class="lst-gallery">
+                <li>
+                  <a href="#">
+                    <img src="./images/item.jpg" alt="아이템">
+                    <p>오버핏 티셔츠</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/item.jpg" alt="아이템">
+                    <p>오버핏 티셔츠</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/item.jpg" alt="아이템">
+                    <p>오버핏 티셔츠</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bnr">
+          <a href="#">
+            <img src="./images/bnr.png" alt="배너이미지">
+          </a>
+        </div>
+        <div class="goto">
+          <ul>
+            <li><a href="#">바로가기 1</a></li>
+            <li><a href="#">바로가기 2</a></li>
+            <li><a href="#">바로가기 3</a></li>
+            <li><a href="#">바로가기 4</a></li>
           </ul>
         </div>
-
       </div>
-      <div class="tabs-item">
-        <h3 class="tit">갤러리</h3>
-        <div class="cont">
-          <ul class="lst-gallery">
-            <li>
-              <a href="#">
-                <img src="./images/item.jpg" alt="갤러리이미지1" />
-                <p>오버핏 티셔츠</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/item.jpg" alt="갤러리이미지2" />
-                <p>반팔카라 니트</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/item.jpg" alt="갤러리이미지3" />
-                <p>컬러 밴딩 팬츠</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+    </main>
+    <footer class="footer">
+      <div class="logo-foot">
+        <a href="#">
+          <img src="./images/logo_foot.png" alt="로고">
+        </a>
       </div>
-    </div>
-    <!-- 배너 -->
-    <div class="bnr">
-      <a href="#">
-        <img src="./images/bnr.png" alt="배너이미지" />
-      </a>
-    </div>
-    <!-- 바로가기 -->
-    <div class="goto">
-      <ul>
-        <li><a href="#">바로가기1</a></li>
-        <li><a href="#">바로가기2</a></li>
-        <li><a href="#">바로가기3</a></li>
-        <li><a href="#">바로가기4</a></li>
-      </ul>
-    </div>
+      <div class="copyright">&#169;copyright</div>
+      <div class="sns">
+        <ul class="lst-sns">
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">youtube</a></li>
+        </ul>
+      </div>
+    </footer>
   </div>
-
-  <footer class="footer">
-    <!-- 로고지만 h1이 두개있으면 안되니까 div처리 -->
-    <div class="logo-foot">
-      <a href="#">
-        <img src="./images/logo_foot.png" alt="로고">
-      </a>
-    </div>
-    <div class="copyright">&#169;copyright</div>
-    <div class="sns">
-      <!-- ul / li 까먹지않게 체크하기 -->
-      <ul class="lst-sns">
-        <li><a href="#">facebook</a></li>
-        <li><a href="#">instagram</a></li>
-        <li><a href="#">youtube</a></li>
-      </ul>
-    </div>
-  </footer>
-  </div>
-  <!-- modal -->
-  <div id="modal" class="dimmed">
+  <!-- ============== modal =============== -->
+  <div id="modal" class="modal-dimmed">
     <div class="modal-box">
-      <h3>모달창 제목</h3>
-      <p>모달창 내용</p>
-      <button>닫기</button>
+      <h3>모달창제목</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate blanditiis veritatis? Corporis
+        expedita porro culpa, numquam architecto quo illum fuga perspiciatis et aspernatur suscipit quisquam odio earum
+        obcaecati dignissimos.
+      </p>
+      <button class="modal-button"></button>
     </div>
   </div>
 </body>

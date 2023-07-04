@@ -1,3 +1,91 @@
-section {
-  background: #e5e6e6;
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.5;
+  color: #333;
+}
+
+.wrap {
+  width: 1200px;
+  /* 블록요소 가운데정렬 */
+  margin: 0 auto;
+  background: lightgray;
+}
+
+header {
+  /* overflow: hidden; */
+  padding: 30px 0px;
+  background: lightblue;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  /* clear은 인라인요소라서 블록으로 바꿔주기 */
+  display: block;
+}
+
+header h1 {
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header nav ul {
+  padding-top: 10px;
+  background: lightcoral;
+}
+
+header nav li {
+  float: left;
+  margin-left: 30px;
+}
+
+main {
+  overflow: hidden;
+}
+
+main .cont {
+  float: left;
+  width: 30%;
+  height: 200px;
+  margin-right: 5%;
+  background: lightgreen;
+  border: 1px solid #000;
+}
+
+main .cont3 {
+  margin-right: 0;
+}
+
+footer {
+  height: 100px;
+  background: yellow;
+  overflow: hidden;
+}
+
+footer .foot1 {
+  float: left;
+}
+
+.foot2 {
+  text-align: center;
+}
+
+footer .foot3 {
+  float: right;
+  margin-top: -30px;
 }
