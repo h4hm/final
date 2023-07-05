@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* === float 쓸때 자주씀 === */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.wrap {
+  width: 1200px;
+  /* 블록요소 가운데정렬 */
+  margin: 0 auto;
+  background: lightgray;
+}
+
+header {
+  /* overflow: hidden; */
+  padding: 30px 0px;
+  background: lightblue;
+}
+
+header h1 {
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  padding-top: 10px;
+  background: lightcoral;
+}
+
+header nav li {
+  float: left;
+  margin-left: 30px;
+}
+
+main {
+  overflow: hidden;
+}
+
+main .cont {
+  float: left;
+  width: 30%;
+  height: 200px;
+  margin-right: 5%;
+  background: lightgreen;
+  border: 1px solid #000;
+}
+
+main .cont3 {
+  margin-right: 0;
+}
+
+footer {
+  height: 100px;
+  background: lightyellow;
+  overflow: hidden;
+}
+
+footer .foot1 {
+  float: left;
+}
+
+.foot2 {
+  text-align: center;
+}
+
+footer .foot3 {
+  float: right;
+  margin-top: -30px;
+}
+
+.container li {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: pink;
+  border: 3px solid #000;
+}
+
+.container li:nth-child(3) {
+  clear: left;
+}
+
+.container li:nth-child(5) {
+  clear: left;
+}

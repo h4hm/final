@@ -106,6 +106,7 @@
       left: 0;
       right: 0;
       height: 100px;
+      z-index: 10000;
       background: yellowgreen;
       border: 3px solid #000;
     }
@@ -122,7 +123,35 @@
 
     body {
       padding-top: 100px;
-      padding-bottom: 100px;
+      padding-bottom: 200px;
+    }
+  </style>
+
+  <hr />
+
+  <h2>가운데 정렬</h2>
+
+  <div class="box4">
+    <div class="item"></div>
+  </div>
+
+  <style>
+    .box4 {
+      position: relative;
+      height: 500px;
+      background: lightgray;
+    }
+
+    .item {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      /* 가로값의 절반만큼 왼쪽으로 당겨서 중앙정렬시키기 */
+      margin-left: -100px;
+      margin-top: -100px;
+      width: 200px;
+      height: 200px;
+      background: coral;
     }
   </style>
 </body>
