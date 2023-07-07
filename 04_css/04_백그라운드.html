@@ -16,26 +16,141 @@
       list-style: none;
       font-family: "Malgun GOthic", sans-serif;
       font-size: 16px;
+      color: #000;
     }
   </style>
 </head>
 
 <body>
   <h1>백그라운드</h1>
-  <strong>백그라운드 - 컬러</strong>
+  <h2>백그라운드 - 컬러</h2>
   <div class="bg1">bg</div>
   <style>
-    body {
-      background: #222;
-      color: white;
-    }
-
     .bg1 {
       width: 100%;
       height: 100px;
       background: rgba(138, 44, 226, 0.5);
     }
   </style>
+
+  <h2>background-attachment</h2>
+  <div class="box2"></div>
+  <style>
+    .box2 {
+      height: 500px;
+      background-image: url("https://images.unsplash.com/photo-1682685794304-99d3d07c57d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80");
+      background-attachment: fixed;
+      background-size: 100% auto;
+    }
+  </style>
+
+  <h2>백그라운드 - 이미지</h2>
+  <div class="box1"></div>
+  <style>
+    .box1 {
+      height: 200vh;
+      border: 3px solid black;
+      background-color: #fff;
+      background-image: url("https://avatars.githubusercontent.com/u/10627436?v=4");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: 200px auto;
+    }
+  </style>
+  <h2>background size</h2>
+  <div class="box box3"></div>
+  <br>
+  <div class="box box4"></div>
+  <style>
+    .box {
+      width: 800px;
+      height: 300px;
+      border: 5px solid #000;
+      background-image: url("https://avatars.githubusercontent.com/u/10627436?v=4");
+      background-repeat: no-repeat;
+    }
+
+    .box3 {
+      /* logo, 아이콘 : 잘리면 안되는 이미지(전체가보이게) */
+      background-size: contain;
+    }
+
+    .box4 {
+      /* 배경이미지 : 박스를 채우는 이미지*/
+      background-size: cover;
+      background-position: 0 -180px;
+    }
+  </style>
+
+  <h2>Sprite</h2>
+  <div class="wrap">
+    <div class="img-g sprite1"></div>
+    <div class="img-g sprite2"></div>
+    <div class="img-g sprite3"></div>
+    <div class="img-g sprite4"></div>
+  </div>
+
+  <style>
+    .wrap {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    /* 중첩코드 모아두기 */
+    .img-g {
+      margin-right: 30px;
+      background-image: url(./image/sprite.png);
+      background-repeat: no-repeat;
+    }
+
+    .sprite1 {
+      width: 134px;
+      height: 132px;
+      background-position: 0 0;
+    }
+
+    .sprite2 {
+      width: 40px;
+      height: 40px;
+      background-position: -200px 0;
+    }
+
+    .sprite3 {
+      width: 40px;
+      height: 40px;
+      background-position: -200px -60px;
+    }
+
+    .sprite3:hover {
+      background-position: -200px -340px;
+    }
+
+    .sprite4 {
+      width: 30px;
+      height: 30px;
+      background-position: -260px 0px;
+      cursor: pointer;
+    }
+
+    .sprite4:hover {
+      background-position: -300px 0px;
+    }
+
+    .sprite4:active {
+      background-position: -340px 0px;
+    }
+
+    .sprite4:visited {
+      background-position: -380px 0px;
+    }
+  </style>
+
+  <br>
+  <br>
+  <br>
+
+
 </body>
 
 </html>
