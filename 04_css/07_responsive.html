@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box-g box1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    .box-g div {
+      height: 300px;
+      background: lightgreen;
+      border: 3px solid #000;
+    }
+
+    .box1 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .box1 div {
+      flex-grow: 1;
+    }
+
+    /* desktop to mobile */
+    @media screen and (max-width: 600px) {
+      .box1 {
+        flex-direction: column
+      }
+    }
+  </style>
+
+  <br><br><br><br><br><br>
+
+  <div class="box-g box2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <style>
+    /* mobile to desktop */
+    @media screen and (min-width: 600px) {
+      .box2 div {
+        float: left;
+        /* 삼등분 */
+        width: 33.333%;
+        background-color: lightblue;
+      }
+    }
+  </style>
+
+  <h2>Layout</h2>
+
+  <div class="wrap">
+    <header class="box">
+      <h1>logo</h1>
+      <nav>Navigation Menu</nav>
+    </header>
+    <div class="container">
+      <div class="content box">content</div>
+      <div class="content box">content</div>
+      <div class="content box">content</div>
+    </div>
+    <footer class="box">
+      <h1>logo</h1>
+      <div class="copyright">copyright</div>
+      <div class="sns">sns</div>
+    </footer>
+  </div>
+  <style>
+    .box {
+      margin: 10px;
+      height: 100px;
+      background: lightgray;
+    }
+
+    .wrap {
+      width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .content {
+      text-align: center;
+      flex-grow: 1;
+      height: 300px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .wrap {
+        width: 100%;
+      }
+    }
+  </style>
+</body>
+
+</html>
