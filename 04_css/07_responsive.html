@@ -101,6 +101,7 @@
     header {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     .container {
@@ -122,6 +123,26 @@
     @media screen and (max-width: 1200px) {
       .wrap {
         width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+
+      .content {
+        height: auto;
+      }
+
+      footer {
+        flex-direction: column;
+        height: auto;
       }
     }
   </style>
