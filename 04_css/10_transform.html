@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transforms | CSS</title>
+</head>
+
+<body>
+  <h1>Transforms</h1>
+  <h2>2D Transform</h2>
+  <div class="box-g">
+    <div class="t t1">translate</div>
+  </div>
+  <div class="box-g">
+    <div class="t t2">rotate</div>
+  </div>
+  <div class="box-g">
+    <div class="t t3">Scale</div>
+  </div>
+  <div class="box-g">
+    <div class="t t4">Skew</div>
+  </div>
+  <div class="box-g">
+    <div class="t t5"></div>
+  </div>
+  <style>
+    .box-g {
+      width: 300px;
+      height: 300px;
+      margin: 150px;
+      background: lightgray;
+    }
+
+    .t {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      font-size: 40px;
+      background: rgba(255, 0, 255, 0.5);
+      /* 트랜지션은 원 코드에 적용 */
+      /* 1초동안 1초후에 변화하기 */
+      transition: all 1s 0.5s;
+      transition-timing-function: ease-in-out;
+    }
+
+    .t1:hover {
+      transform: translate(50px, 50px);
+    }
+
+    .t2 {
+      transition-delay: 2s;
+    }
+
+    .t2:hover {
+      transform: rotate(45deg);
+    }
+
+    .t3:hover {
+      transform: scale(0.7);
+    }
+
+    .t4:hover {
+      transform: skew(30deg, 10deg);
+    }
+
+    .t5:hover {
+      transform: translateX(30px) scale(0.8) rotate(45deg);
+    }
+  </style>
+
+  <h2>3D Transform</h2>
+  <div class="box-g">
+    <div class="t t6">3D</div>
+  </div>
+  <style>
+    .box-g {
+      perspective: 500px;
+    }
+
+    .t6:hover {
+      transform: rotateX(150deg);
+    }
+  </style>
+</body>
+
+</html>

@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -14,6 +17,8 @@
       text-decoration: none;
       box-sizing: border-box;
       color: #000;
+      /* 페이지 기본폰트 */
+      font-family: 'Noto Sans KR', sans-serif;
     }
   </style>
 </head>
@@ -96,12 +101,17 @@
       width: 1200px;
       margin: auto;
       padding: 20px;
+      background-color: lightblue;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Roboto', sans-serif;
     }
 
     .container {
