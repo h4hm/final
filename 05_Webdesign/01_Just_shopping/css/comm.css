@@ -62,14 +62,11 @@
   border-right: 1px solid #dbdbdb;
 }
 
-.gnb .depth1 > li > a:hover {
-  color: blue;
-  border-bottom: 3px solid blue;
-}
-
-/* 마우스오버했을때 depth2가 보이게하기 */
-.gnb .depth1:hover .depth2 {
-  display: block;
+/* depth2로 마우스오버해도 depth1에 라인생기게 */
+/* li에 depth1 depth2 다 들어가있어서 li:hover로 잡아야함 */
+.gnb .depth1 > li:hover > a {
+  font-weight: 900;
+  border-bottom: 3px solid #333;
 }
 
 .gnb .depth1 > li {
@@ -78,6 +75,7 @@
 
 /* ----------------------- nav depth2 --------------------- */
 
+/* gnb 마우스 오버 전 */
 .gnb .depth2 {
   /* display: none; */
   position: absolute;
@@ -86,10 +84,34 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 20px 0px;
+  overflow: hidden;
+  max-height: 0;
   background: white;
-  border: 1px solid #dbdbdb;
+  border-bottom: 0px solid #dbdbdb;
   border-right: none;
+  transition: all 0.3s;
+}
+
+/* gnb 마우스 오버 후 */
+.gnb .depth1:hover .depth2 {
+  display: block;
+  max-height: 300px;
+  /* padding: 10px 0; */
+  border-bottom-width: 1px;
+}
+
+.gnb .depth2::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  bottom: 5px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gnb .depth1 > li:last-child .depth2::after {
+  display: none;
 }
 
 /* 밑에 뭐 더 없으니까 자식으로 잡음 */
@@ -103,8 +125,9 @@
 }
 
 .gnb .depth2 a:hover {
-  border-bottom: 3px solid blue;
-  color: blue;
+  border-bottom: none;
+  background-color: #333;
+  color: white;
 }
 
 /* ------------------------ slide ------------------------- */
