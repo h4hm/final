@@ -1,0 +1,48 @@
+@import "reset.css";
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ========= nav ======= */
+
+.gnb .depth1 {
+  display: flex;
+}
+
+.gnb .depth1 li {
+  margin-left: 20px;
+}
+
+.depth2 {
+  display: none;
+}
+
+/* ========== menu ========== */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mypage,
+.search,
+.hamburger {
+  margin-left: 0.8rem;
+}
