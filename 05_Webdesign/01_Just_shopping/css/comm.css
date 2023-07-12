@@ -149,8 +149,30 @@
   position: absolute;
   top: 0;
   left: 0;
+  animation: slide-anim 9s linear alternate infinite;
 }
 /* 나중에 스크립트로 나머지 슬라이드 올라오게 제어 */
+
+@keyframes slide-anim {
+  0% {
+    top: 0;
+  }
+  30% {
+    top: 0;
+  }
+  35% {
+    top: -300px;
+  }
+  60% {
+    top: -300px;
+  }
+  65% {
+    top: -600px;
+  }
+  100% {
+    top: -600px;
+  }
+}
 
 /* ---------------------- contents ------------------------ */
 

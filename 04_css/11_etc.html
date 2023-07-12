@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETC | CSS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      line-height: 1.5;
+      box-sizing: border-box;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tool-tip</h1>
+  <div class="tooltip-wrap">
+    tooltip 보기
+    <div class="tooltip-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, facilis.</div>
+  </div>
+  <style>
+    .tooltip-wrap {
+      display: inline-block;
+      position: relative;
+      margin: 100px;
+      font-weight: bold;
+      font-size: 20px;
+      color: blue;
+      background-color: lightgreen;
+    }
+
+    .tooltip-item {
+      position: absolute;
+      bottom: -160px;
+      right: 50%;
+      display: inline-flex;
+      max-width: 100px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: normal;
+      color: white;
+      background-color: #555;
+      border-radius: 10px;
+      transform: translateX(50%);
+      /* word-break: break-all; */
+    }
+  </style>
+</body>
+
+</html>

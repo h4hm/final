@@ -117,6 +117,7 @@
       left: 0;
       right: 0;
       height: 100px;
+      z-index: 10000;
       background: blue;
       border: 3px solid #000;
     }
@@ -152,6 +153,30 @@
       width: 200px;
       height: 200px;
       background: coral;
+    }
+  </style>
+
+  <h2>가운데정렬 : transform</h2>
+
+  <div class="box5">
+    <div class="item2"></div>
+  </div>
+  <style>
+    .box5 {
+      position: relative;
+      height: 500px;
+      background: lightgray;
+    }
+
+    /* 많이씀 */
+    .box5 .item2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20%;
+      height: 20%;
+      background-color: purple;
+      transform: translate(-50%, -50%);
     }
   </style>
 </body>
