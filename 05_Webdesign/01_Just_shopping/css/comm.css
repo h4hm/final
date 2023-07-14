@@ -1,5 +1,16 @@
 /* reset */
 @charset "UTF-8";
+:root {
+  --primary: #111;
+  --line: #dbdbdb;
+  --txt: #222328;
+  --w: #fff;
+  --b: #000;
+
+  --widthWrap: 1200px;
+  --slideHeight: 300px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +18,10 @@
   text-decoration: none;
   box-sizing: border-box;
   line-height: 1.5;
-  color: #222328;
+  color: var(--txt);
 }
 .wrap {
-  width: 1200px;
+  width: var(--widthWrap);
   /* 꼭대기에 붙어서(위아래0) 좌우 가운데정렬 : 0 auto */
   margin: 0 auto;
 }
@@ -23,7 +34,7 @@
   justify-content: space-between;
   height: 100px;
   /* 내부의 요소들은 height 100%가 됨 */
-  background: white;
+  background: var(--w);
 }
 
 .logo {
@@ -31,7 +42,7 @@
   /* 완벽한 센터링 */
   justify-content: center;
   align-items: center;
-  background: white;
+  background: var(--w);
 }
 
 .logo a {
@@ -141,7 +152,7 @@
 
 .slide-wrap {
   position: relative;
-  height: 300px;
+  height: var(--slideHeight);
   overflow: hidden;
 }
 
