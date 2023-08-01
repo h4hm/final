@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 선행</title>
+</head>
+
+<body>
+  <h1>Javacript</h1>
+  <h2>1. string : "문자데이터"</h2>
+  <script>
+    let myName = "h4hm";
+    let email = 'h4hm.github.com';
+    // 문자열과 변수를 함께 출력하기 -> 백틱기호 ``
+    let hello = `안녕! ${myName}!`;
+
+    console.log(myName);
+    console.log(email);
+    console.log(hello);
+  </script>
+  <h2>2. boolean : true / false 밖에없는 논리데이터</h2>
+  <script>
+    let checked = true;
+    let isShow = false;
+
+    console.log("checked : " + checked);
+    console.log(`isShow : ${isShow}`);
+  </script>
+  <h2>3. Undefied : 데이터가 할당되지않음</h2>
+  <script>
+    let undef;
+    let object = { abc: 123 };
+
+    console.log(undef);
+    console.log(object.abc);
+    console.log(object.xyz);
+  </script>
+  <h2>4. Null : 데이터가 의도적으로 비어있음</h2>
+  <script>
+    let empty = null;
+
+    console.log(empty);
+  </script>
+  <h2>5. object : 객체데이터</h2>
+  <script>
+    let user = {
+      name: "h4hm",
+      age: 100,
+      isValid: true,
+    };
+
+    console.log(user);
+    console.log(user.name);
+    console.log(user.age);
+    console.log(user.isValid);
+  </script>
+  <h2>6. Array : 배열데이터</h2>
+  <script>
+    let fruits = ['apple', 'banna', 'cherry'];
+
+    console.log(fruits);
+    console.log(fruits[0]);
+    console.log(fruits[1]);
+    console.log(fruits[2]);
+  </script>
+  <h2>7. 변수</h2>
+  <p>var (요즘안씀) / let (재할당가능) / const(재할당불가)</p>
+  <script>
+    let a = 5;
+    const b = 10;
+
+    console.log(`a : ${a}`);
+    console.log(`b : ${b}`);
+    console.log("a + b");
+    console.log(a + b);
+    console.log(a * b);
+    console.log(a / b);
+
+    // 데이터 재할당
+    a = 50;
+    console.log(`a : ${a}`);
+    console.log(`b : ${b}`);
+    console.log("a + b");
+    console.log(a + b);
+    console.log(a * b);
+    console.log(a / b);
+
+    // 재할당 불가 
+    b = 100;
+    console.log(`b : ${b}`)
+  </script>
+  <h2>8. Reserved word : 예약어 (변수나 함수이름으로 쓸수없음)</h2>
+  <script>
+
+  </script>
+</body>
+
+</html>
