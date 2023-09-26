@@ -1,0 +1,3 @@
+# github 제외파일
+node_modules
+*.log

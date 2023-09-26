@@ -58,3 +58,64 @@ console.log("okay1 :", okay1());
 console.log("okay2 :", okay2());
 console.log("okay3 :", okay3());
 console.log("okay4 :", okay4());
+
+// 매개변수 ==================================
+
+// 화살표함수 ===================================
+
+// sum 함수 ======================================
+
+console.log("===== sum 함수 =====");
+
+// 함수 선언문
+function sum1(x, y) {
+  return x + y;
+}
+
+// 표현식
+const sum2 = function (x, y) {
+  return x + y;
+};
+
+// 화살표함수
+const sum3 = (x, y) => {
+  return x + y;
+};
+
+// 화살표함수축약
+const sum4 = (x, y) => x + y;
+
+console.log(sum1(1, 2));
+console.log(sum2(1, 2));
+console.log(sum3(1, 2));
+console.log(sum4(1, 2));
+
+// ************ 화살표함수 예시
+let a = () => {};
+// 매개변수가 한개인 경우
+let b = (x) => {};
+// 매개변수가 여러개
+let c = (x, y) => {};
+// 함수의 리턴이 있는경우
+let d = (x) => {
+  return x + x;
+};
+// 함수의 리턴이 있는경우, 중괄호 생략
+let e = (x) => x + x;
+// return 키워드로 시작하지 않는 경우, 중괄호 생략 안됨
+let f = (x) => {
+  console.log(x + x);
+  return x + x;
+};
+// 객체데이터 반환
+let g = () => {
+  return { a: 1 };
+};
+// 생략하는경우 객체데이터의 중괄호라는것을 구분하기위해 소괄호 사용
+let h = () => ({ a: 1 });
+// 배열데이터 반환
+let i = () => {
+  return [1, 2, 3];
+};
+//  축약
+let j = () => [1, 2, 3];
