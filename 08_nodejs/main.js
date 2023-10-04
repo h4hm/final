@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import "swiper/css";
+import "swiper/swiper.css";
 // import "swiper/scss";
 
 const swiper = new Swiper(".swiper", {

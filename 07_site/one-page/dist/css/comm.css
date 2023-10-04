@@ -1,0 +1,38 @@
+:root,
+[data-bs-theme=light] {
+  --bs-primary: rgb(97, 13, 253);
+  --bs-primary-rgb: 97, 13, 253;
+}
+
+:root {
+  --sm: 768px;
+  --md: 992px;
+  --lg: 1200px;
+}
+
+.navbar-brand {
+  display: block;
+}
+
+#header {
+  padding: 0 30px;
+  height: 58px;
+}
+
+.sec-g {
+  padding: 350px 0;
+}
+
+#jumbotron {
+  height: 70vh;
+}
+
+.wrap {
+  padding-top: 58px;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-collapse {
+    justify-content: flex-end;
+  }
+}/*# sourceMappingURL=comm.css.map */
